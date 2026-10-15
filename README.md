@@ -69,7 +69,7 @@ Send a `POST` request to `/graphql` with the `Store` header (`en`, `fr`, or `de`
 
 ### Store View Responses
 
-#### 🇬🇧 English (`Store: en`)
+####  English (`Store: en`)
 ```json
 {
   "data": {
@@ -85,7 +85,7 @@ Send a `POST` request to `/graphql` with the `Store` header (`en`, `fr`, or `de`
 }
 ```
 
-#### 🇫🇷 French (`Store: fr`)
+####  French (`Store: fr`)
 ```json
 {
   "data": {
@@ -101,7 +101,7 @@ Send a `POST` request to `/graphql` with the `Store` header (`en`, `fr`, or `de`
 }
 ```
 
-#### 🇩🇪 German (`Store: de`)
+####  German (`Store: de`)
 ```json
 {
   "data": {
