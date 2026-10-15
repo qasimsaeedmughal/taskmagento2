@@ -1,0 +1,18 @@
+type Query {
+    productDetails(
+        sku: String! @doc(description: "The SKU of the product to retrieve.")
+    ): ProductDetails
+        @resolver(class: "Custom\\Badge\\GraphQl\\Resolver\\ProductDetailsResolver")
+        @doc(description: "Returns detailed product information including the translated badge for the active store view.")
+        @cache(cacheable: false)
+}
+
+type ProductDetails @doc(description: "Product detail response including badge information.") {
+    sku         : String  @doc(description: "Product SKU.")
+    name        : String  @doc(description: "Product name, including badge suffix when a badge is assigned.")
+    price       : Float   @doc(description: "Product price.")
+    currency    : String  @doc(description: "Currency code for the active store view (GBP for EN, EUR for FR/DE).")
+    stock_status: String  @doc(description: "Stock status: In stock or Out of stock.")
+    badge       : String  @doc(description: "Translated badge label for the active store view, or null when not set.")
+}
+

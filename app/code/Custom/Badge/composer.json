@@ -1,0 +1,25 @@
+{
+    "name": "custom/module-badge",
+    "description": "Adds a translatable Badge product attribute and a productDetails GraphQL query with store-view-aware badge labels.",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": "proprietary",
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "*",
+        "magento/module-catalog": "*",
+        "magento/module-eav": "*",
+        "magento/module-store": "*",
+        "magento/module-catalog-graph-ql": "*",
+        "magento/module-catalog-inventory": "*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Custom\\Badge\\": ""
+        }
+    }
+}
+
